@@ -5,7 +5,7 @@
     include "customer_sidebar.php";
     include "session_timeout.php";
 
-    $fname = mysqli_real_escape_string($conn, $_POST["fname"]);
+    $fname =  $_POST["fname"];
     $lname = mysqli_real_escape_string($conn, $_POST["lname"]);
     $acno = mysqli_real_escape_string($conn, $_POST["acno"]);
     $email = mysqli_real_escape_string($conn, $_POST["email"]);

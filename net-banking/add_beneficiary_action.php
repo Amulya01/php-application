@@ -6,7 +6,7 @@
     include "session_timeout.php";
 
     $fname =  $_POST["fname"];
-    $lname = mysqli_real_escape_string($conn, $_POST["lname"]);
+    $lname = $_POST["lname"];
     $acno = mysqli_real_escape_string($conn, $_POST["acno"]);
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $phno = mysqli_real_escape_string($conn, $_POST["phno"]);
